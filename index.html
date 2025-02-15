@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprende Programación</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>Aprende Programación</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#cursos">Cursos</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+                <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección Inicio -->
+    <section id="inicio" class="hero">
+        <div class="container">
+            <h2>Bienvenido a Aprende Programación</h2>
+            <p>Domina las habilidades tecnológicas del futuro con nuestros cursos.</p>
+            <a href="#cursos" class="btn animacion-boton">Explorar Cursos</a>
+        </div>
+    </section>
+
+    <!-- Sección Cursos -->
+    <section id="cursos" class="cursos">
+        <div class="container">
+            <h2>Nuestros Cursos</h2>
+            <div class="curso-grid">
+                <!-- Curso de HTML y CSS -->
+                <div class="curso-card">
+                    <h3>HTML y CSS</h3>
+                    <p>Aprende a crear páginas web desde cero.</p>
+                    <button class="btn animacion-boton ver-mas" data-curso="html-css">Más información</button>
+                    <div class="curso-detalle" id="html-css">
+                        <h4>Descripción del Curso</h4>
+                        <p>Este curso te enseñará los fundamentos de HTML y CSS para crear páginas web estáticas.</p>
+                        <h4>Ejemplo de Código</h4>
+                        <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Mi Página&lt;/title&gt;
+    &lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hola Mundo&lt;/h1&gt;
+    &lt;p&gt;Esta es mi primera página web.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                        </code></pre>
+                    </div>
+                </div>
+
+                <!-- Curso de JavaScript -->
+                <div class="curso-card">
+                    <h3>JavaScript</h3>
+                    <p>Domina el lenguaje de programación más popular.</p>
+                    <button class="btn animacion-boton ver-mas" data-curso="javascript">Más información</button>
+                    <div class="curso-detalle" id="javascript">
+                        <h4>Descripción del Curso</h4>
+                        <p>Aprende a programar en JavaScript para crear interactividad en tus páginas web.</p>
+                        <h4>Ejemplo de Código</h4>
+                        <pre><code>
+// Función para mostrar un mensaje
+function mostrarMensaje() {
+    alert("¡Hola, mundo!");
+}
+
+// Llamar a la función
+mostrarMensaje();
+                        </code></pre>
+                    </div>
+                </div>
+
+                <!-- Curso de Python -->
+                <div class="curso-card">
+                    <h3>Python</h3>
+                    <p>Ideal para principiantes y proyectos avanzados.</p>
+                    <button class="btn animacion-boton ver-mas" data-curso="python">Más información</button>
+                    <div class="curso-detalle" id="python">
+                        <h4>Descripción del Curso</h4>
+                        <p>Python es un lenguaje versátil para desarrollo web, análisis de datos y automatización.</p>
+                        <h4>Ejemplo de Código</h4>
+                        <pre><code>
+# Función para saludar
+def saludar(nombre):
+    print(f"Hola, {nombre}!")
+
+# Llamar a la función
+saludar("Mundo")
+                        </code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Blog -->
+<section id="blog" class="blog">
+    <div class="container">
+        <h2>Últimos Artículos</h2>
+        <div class="articulo-grid">
+            <!-- Artículo: Introducción a HTML -->
+            <div class="articulo-card">
+                <img src="https://www.hostinger.es/tutoriales/wp-content/uploads/sites/7/2018/11/what-is-html.jpg" alt="HTML" class="articulo-imagen animacion-imagen">
+                <h3>Introducción a HTML</h3>
+                <p>HTML (HyperText Markup Language) es el lenguaje estándar para crear páginas web.</p>
+                <button class="btn animacion-boton ver-articulo" data-articulo="html">Ver</button>
+                <div class="articulo-detalle" id="html">
+                    <h4>Descripción Detallada</h4>
+                    <p>Con HTML, defines la estructura y el contenido de una página usando etiquetas como <code>&lt;h1&gt;</code>, <code>&lt;p&gt;</code>, y <code>&lt;a&gt;</code>.</p>
+                    <p><strong>Consejo:</strong> Usa <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, y <code>&lt;footer&gt;</code> para estructurar tu página de manera semántica.</p>
+                </div>
+            </div>
+
+            <!-- Artículo: CSS Avanzado -->
+            <div class="articulo-card">
+                <img src="https://extassisnetwork.com/tutoriales/wp-content/uploads/Que-es-CSS.jpg"alt="CSS" class="articulo-imagen animacion-imagen">
+                <h3>CSS Avanzado</h3>
+                <p>CSS (Cascading Style Sheets) se usa para dar estilo a las páginas web.</p>
+                <button class="btn animacion-boton ver-articulo" data-articulo="css">Ver</button>
+                <div class="articulo-detalle" id="css">
+                    <h4>Descripción Detallada</h4>
+                    <p>Con CSS avanzado, puedes crear diseños responsivos, animaciones y efectos visuales impresionantes.</p>
+                    <p><strong>Consejo:</strong> Usa <code>flexbox</code> y <code>grid</code> para crear diseños modernos y flexibles.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="contacto">
+        <div class="container">
+            <h2>Contacto</h2>
+            <form action="#" method="post">
+                <input type="text" name="nombre" placeholder="Tu nombre" required>
+                <input type="email" name="email" placeholder="Tu email" required>
+                <textarea name="mensaje" placeholder="Tu mensaje" required></textarea>
+                <button type="submit" class="btn animacion-boton">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Aprende Programación. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="scripts.js"></script>
+</body>
+</html>
